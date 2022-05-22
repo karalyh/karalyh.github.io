@@ -9,6 +9,10 @@ div{
 	font-size: 15px;
 
 }
+ul li{
+	font-size: 30px
+
+}
 #menu {
 	background-color: orange;
 	border: 1px solid;
