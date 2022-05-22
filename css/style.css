@@ -3,7 +3,9 @@ h1{
         text-align: center;
 }
 div{
-	background-color:orange;
+	background-color: orange;
+	font-family: Arial,sans-serif;
+	font-size: 15px;
 
 }
 
