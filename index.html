@@ -5,16 +5,23 @@
 		<link rel="stylesheet" href="css/style.css">
 		<script>
 			function bonjour(){
-				document.querySelector('#header').innerHTML="Bonjour";
+				welcome=document.querySelector('#welcome');
+				if(welcome.innerHTML==="Bonjour"){
+					welcome.innerHTML="Bienvenue sur le forum de reference dedie aux dernieres technologies IT en Afrique";
+				}else
+					welcome.innerHTML="Bonjour";
+				}
+					
 			}
 		</script>
 
 	</head>
 	<body>
 		<div id="header">
-			<h1>Bienvenue sur le forum de reference dedie aux dernieres technologies IT en Afrique</h1>
-			
 			<img src="images/logo_experts.png" alt="logo experts" width="300"/>
+			<h1 id="welcome">Bienvenue sur le forum de reference dedie aux dernieres technologies IT en Afrique</h1>
+			
+			
 		</div>
 		
 		<div>
