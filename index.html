@@ -4,18 +4,22 @@
 		<title>Abidjan Technologies Forum</title>
 		<link rel="stylesheet" href="css/style.css">
 		<script>
-			alert("bonjour");
+			function bonjour(){
+				document.querySelector('#header').innerHTML="Bonjour";
+			}
 		</script>
 
 	</head>
 	<body>
 		<div id="header">
 			<h1>Bienvenue sur le forum de reference dedie aux dernieres technologies IT en Afrique</h1>
+			
 			<img src="images/logo_experts.png" alt="logo experts" width="300"/>
 		</div>
 		
 		<div>
 		<div id="menu">
+			
 		<ul>
 			<li class="menumain"> Developpement  application</li>
 				<ul>
@@ -48,6 +52,7 @@
 		</div>
 		<div id="content">
 		Contenu
+			<button onclick="bonjour()"> Changer entete</button>
 		</div>
 		</div>
 		
