@@ -1,3 +1,7 @@
+function loadMenu(){
+	menu=document.querySelector('#menu');
+	
+}
 function bonjour(){
 	welcome=document.querySelector('#welcome');
 	if(welcome.innerHTML==="Bonjour"){
