@@ -1,6 +1,7 @@
-h1{
+#welcome{
 	color: blue;
         text-align: center;
+	padding: 50px;
 }
 div{
 	border: 1px solid;	
@@ -9,11 +10,8 @@ div{
 	font-size: 15px;
 
 }
-.menumain{
-	font-size: 30px;
 
-}
-#menu {
+#sidebar {
 	background-color: orange;
 	border: 1px solid;
 	width: 300px;
@@ -21,10 +19,10 @@ div{
 
 
 }
-#content {
+#container {
 	background-color: green;
-	width: 600px;
+	padding: 50px;
 }
-#header {
+header {
 	background-color: yellow;
 }
