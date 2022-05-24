@@ -1,23 +1,33 @@
-let menu = {
+let menude ={ 
 	Developpement:['Html/Css','Javascript/React','Python/Django'], 
 	"Base de données":['Posgresql','Mysql','Oracle'],
 	Systéme:['Linux','Windows']
 
 };
 function loadMenu(){
-	//sidebar=document.querySelector('#sidebar');
-	console.log(menu);
-	menu.forEach(createMenu);
+for (var [cle, valeur] of Object.entries(menude)){
+  console.log(cle + ' v= ' + valeur);
+  createMenu(cle,valeur);
+}
 	
 }
-function createMenu(libelle){
+function createMenu(men1,submen){
 	const li=document.createElement("li");
-	const litext=document.createTextNode(libelle);
+	const litext=document.createTextNode(men1);
 	const mprinc=document.getElementById("menu");
 	li.appendChild(litext);
 	mprinc.appendChild(li);
 
+	const ul=document.createElement("ul");
+	for (let i=0; i<submen.length;i++){
+		const lis=document.createElement("li");
+		const listext=document.createTextNode(submen[i]);
+		lis.appendChild(listext);
+		ul.appendChild(lis);
+	}
+	mprinc.appendChild(ul);
 }
+
 				
 	
 document.addEventListener('DOMContentLoaded',loadMenu);
