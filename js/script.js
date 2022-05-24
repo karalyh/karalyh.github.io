@@ -5,7 +5,7 @@ let menu = {
 
 };
 function loadMenu(){
-	menu=document.querySelector('#sidebar');
+	//sidebar=document.querySelector('#sidebar');
 	console.log(menu);
 	
 }
