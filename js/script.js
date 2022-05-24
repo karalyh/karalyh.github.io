@@ -13,6 +13,7 @@ for (var [cle, valeur] of Object.entries(menude)){
 }
 function createMenu(men1,submen){
 	const li=document.createElement("li");
+	li.style.fontWeight="bold";
 	const litext=document.createTextNode(men1);
 	const mprinc=document.getElementById("menu");
 	li.appendChild(litext);
