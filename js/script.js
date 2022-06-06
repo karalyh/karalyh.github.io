@@ -1,27 +1,42 @@
-let menude ={ 
-	Developpement:{
-		'Html/CSS':'html.com',
-		'Javascript/React js':'html.com',
-		'Python/Django':'html.com'
-	}, 
-	"Base de données":{
-		'Posgresql':'html.com',
-		'Mysql':'html.com',
-		'Oracle':'html.com'
-	},
-	Systéme:{
-		'Linux':'html.com',
-		'Windows':'html.com'
-	}
+let menude =[ 
+	Developpement:[
+			{
+				'course_name':'Html/CSS',
+				'url':'html.com',
+			},
+			{
+				'course_name':'Javascript/React js',
+				'url':'html.com',
+			},
+			{
+				'course_name':'Python/Django',
+				'url':'html.com',
+			}
+	], 
+	"Base de donnee":[
+                        {
+                                'course_name':'Mysql',
+                                'url':'html.com',
+                        },
+                        {
+                                'course_name':'Postgresql',
+                                'url':'html.com',
+                        },
+                        {
+                                'course_name':'Oracle',
+                                'url':'html.com',
+                        }
+        ],
 
-};
+
+];
 function message(){
         alert('Bonjour EXPERTS');
 }
 
 function loadMenu(){
 for (var [cle, valeur] of Object.entries(menude)){
-  console.log(cle + ' v= ' + valeur[0]);
+  console.log(cle + ' v= ' + valeur);
   createMenu(cle,valeur);
 }
 document.querySelectorAll("li").forEach(function(li){
@@ -42,7 +57,7 @@ function createMenu(men1,submen){
 	const ul=document.createElement("ul");
 	for (let i=0; i<submen.length;i++){
 		const lis=document.createElement("li");
-		const listext=document.createTextNode(submen[i][0]);
+		const listext=document.createTextNode(submen.course_name);
 		lis.appendChild(listext);
 		ul.appendChild(lis);
 	}
