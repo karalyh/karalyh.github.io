@@ -21,7 +21,7 @@ function message(){
 
 function loadMenu(){
 for (var [cle, valeur] of Object.entries(menude)){
-  console.log(cle + ' v= ' + valeur);
+  console.log(cle + ' v= ' + valeur[0]);
   createMenu(cle,valeur);
 }
 document.querySelectorAll("li").forEach(function(li){
@@ -42,7 +42,7 @@ function createMenu(men1,submen){
 	const ul=document.createElement("ul");
 	for (let i=0; i<submen.length;i++){
 		const lis=document.createElement("li");
-		const listext=document.createTextNode(submen[i]);
+		const listext=document.createTextNode(submen[i][0]);
 		lis.appendChild(listext);
 		ul.appendChild(lis);
 	}
