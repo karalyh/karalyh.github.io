@@ -13,7 +13,6 @@ for (var [cle, valeur] of Object.entries(menude)){
   console.log(cle + ' v= ' + valeur);
   createMenu(cle,valeur);
 }
-document.querySelectorAll('li').onclick= message;
 	
 }
 function createMenu(men1,submen){
@@ -29,6 +28,7 @@ function createMenu(men1,submen){
 		const lis=document.createElement("li");
 		const listext=document.createTextNode(submen[i]);
 		lis.appendChild(listext);
+		document.querySelector("li").onclick= message;
 		ul.appendChild(lis);
 	}
 	mprinc.appendChild(ul);
