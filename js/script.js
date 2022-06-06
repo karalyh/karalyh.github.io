@@ -4,11 +4,16 @@ let menude ={
 	Systéme:['Linux','Windows']
 
 };
+function message(){
+        alert('Bonjour');
+}
+
 function loadMenu(){
 for (var [cle, valeur] of Object.entries(menude)){
   console.log(cle + ' v= ' + valeur);
   createMenu(cle,valeur);
 }
+document.querySelector('li').onclick= message;
 	
 }
 function createMenu(men1,submen){
@@ -32,4 +37,3 @@ function createMenu(men1,submen){
 				
 	
 document.addEventListener('DOMContentLoaded',loadMenu);
-document.querySelector('li').onclick= alert('Bonjour');
