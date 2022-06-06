@@ -1,4 +1,4 @@
-let menude =[ 
+let menude ={ 
 	"Developpement":[
 				{
 				'course_name':'Html/CSS',
@@ -29,7 +29,7 @@ let menude =[
         ],
 
 
-];
+};
 function message(){
         alert('Bonjour EXPERTS');
 }
