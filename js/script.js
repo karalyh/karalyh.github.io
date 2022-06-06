@@ -13,7 +13,7 @@ for (var [cle, valeur] of Object.entries(menude)){
   console.log(cle + ' v= ' + valeur);
   createMenu(cle,valeur);
 }
-document.querySelector('li').onclick= message;
+document.querySelectorAll('li').onclick= message;
 	
 }
 function createMenu(men1,submen){
