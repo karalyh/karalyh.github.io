@@ -1,17 +1,17 @@
 let menude ={ 
 	Developpement:{
-		'Html/CSS',
-		'Javascript/React js',
-		'Python/Django'
+		'Html/CSS':'html.com',
+		'Javascript/React js':'html.com',
+		'Python/Django':'html.com'
 	}, 
 	"Base de données":{
-		'Posgresql',
-		'Mysql',
-		'Oracle'
+		'Posgresql':'html.com',
+		'Mysql':'html.com',
+		'Oracle':'html.com'
 	},
 	Systéme:{
-		'Linux',
-		'Windows'
+		'Linux':'html.com',
+		'Windows':'html.com'
 	}
 
 };
