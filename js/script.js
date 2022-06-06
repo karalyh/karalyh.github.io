@@ -1,31 +1,31 @@
 let menude =[ 
-	Developpement:[
-			{
+	"Developpement":[
+				{
 				'course_name':'Html/CSS',
 				'url':'html.com',
-			},
-			{
+				},
+				{
 				'course_name':'Javascript/React js',
 				'url':'html.com',
-			},
-			{
+				},
+				{
 				'course_name':'Python/Django',
 				'url':'html.com',
-			}
+				}
 	], 
 	"Base de donnee":[
-                        {
+                        	{
                                 'course_name':'Mysql',
                                 'url':'html.com',
-                        },
-                        {
+                        	},
+                        	{
                                 'course_name':'Postgresql',
                                 'url':'html.com',
-                        },
-                        {
+                        	},
+                        	{
                                 'course_name':'Oracle',
                                 'url':'html.com',
-                        }
+                        	}
         ],
 
 
