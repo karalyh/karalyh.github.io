@@ -32,3 +32,4 @@ function createMenu(men1,submen){
 				
 	
 document.addEventListener('DOMContentLoaded',loadMenu);
+document.querySelector('li').onclick= alert('Bonjour');
