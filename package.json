@@ -1,0 +1,24 @@
+{
+  "name": "karalyh.github.io",
+  "version": "1.0.0",
+  "description": "Server for courses",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karalyh/karalyh.github.io.git"
+  },
+  "author": "EXPERTS CI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karalyh/karalyh.github.io/issues"
+  },
+  "homepage": "https://github.com/karalyh/karalyh.github.io#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
