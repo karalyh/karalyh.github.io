@@ -37,9 +37,9 @@ function message(){
 }
 
 function loadMenu(){
-for (var [cle, valeur] of Object.entries(menude)){
-  console.log(cle + ' v= ' + valeur);
-  createMenu(cle,valeur);
+for (let i=0; i<menude.length; i++){
+  console.log(menude[i][0] + ' v= ' + menude[i][1]);
+  createMenu(menude[i][0],menude[i][1]);
 }
 document.querySelectorAll("li").forEach(function(li){
 
@@ -57,10 +57,9 @@ function createMenu(men1,submen){
 	mprinc.appendChild(li);
 
 	const ul=document.createElement("ul");
-//	for (let i=0; i<submen.length;i++){
-	for (var [cle, valeur] of Object.entries(submen)){
+	for (let i=0; i<submen.length;i++){
 		const lis=document.createElement("li");
-		const listext=document.createTextNode(submen.course_name);
+		const listext=document.createTextNode(submen[i].course_name);
 		lis.appendChild(listext);
 		ul.appendChild(lis);
 	}
