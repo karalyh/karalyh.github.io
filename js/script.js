@@ -33,7 +33,7 @@ let menude =[
  
 	];
 function message(){
-        alert('Bonjour EXPERTS');
+        alert("Bonjour EXPERTS"+url);
 }
 
 function loadMenu(){
@@ -43,7 +43,9 @@ for (let i=0; i<menude.length; i++){
 }
 document.querySelectorAll(".submenu").forEach(function(li){
 
-li.onclick=message;
+li.onclick=function(){
+	alert("sous menu:"+ lis.dataset.url);
+};
 
 });
 	
@@ -60,6 +62,7 @@ function createMenu(men1,submen){
 	for (let i=0; i<submen.length;i++){
 		const lis=document.createElement("li");
 		lis.className="submenu";
+		lis.setAttribute("data-url",submen[i].url)
 		const listext=document.createTextNode(submen[i].course_name);
 		lis.appendChild(listext);
 		ul.appendChild(lis);
