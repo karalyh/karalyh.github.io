@@ -41,7 +41,7 @@ for (let i=0; i<menude.length; i++){
   console.log(menude[i][0] + ' v= ' + menude[i][1]);
   createMenu(menude[i][0],menude[i][1]);
 }
-document.querySelectorAll("li").forEach(function(li){
+document.querySelectorAll(".submenu").forEach(function(li){
 
 li.onclick=message;
 
@@ -59,6 +59,7 @@ function createMenu(men1,submen){
 	const ul=document.createElement("ul");
 	for (let i=0; i<submen.length;i++){
 		const lis=document.createElement("li");
+		lis.className="submenu";
 		const listext=document.createTextNode(submen[i].course_name);
 		lis.appendChild(listext);
 		ul.appendChild(lis);
