@@ -44,7 +44,7 @@ for (let i=0; i<menude.length; i++){
 document.querySelectorAll(".submenu").forEach(function(li){
 
 li.onclick=function(){
-	alert("sous menu:"+ lis.dataset.url);
+	alert("sous menu:"+ li.dataset.url);
 };
 
 });
