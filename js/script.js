@@ -1,5 +1,5 @@
-let menude ={ 
-	"Developpement":[
+let menude =[ 
+		['Developpement',[
 				{
 				'course_name':'Html/CSS',
 				'url':'html.com',
@@ -12,24 +12,26 @@ let menude ={
 				'course_name':'Python/Django',
 				'url':'html.com',
 				}
-	], 
-	"Base de donnee":[
-                        	{
-                                'course_name':'Mysql',
+				]
+		 ],
+                ['Base de donnees',[
+                                {
+                                'course_name':'Html/CSS',
                                 'url':'html.com',
-                        	},
-                        	{
-                                'course_name':'Postgresql',
+                                },
+                                {
+                                'course_name':'Javascript/React js',
                                 'url':'html.com',
-                        	},
-                        	{
-                                'course_name':'Oracle',
+                                },
+                                {
+                                'course_name':'Python/Django',
                                 'url':'html.com',
-                        	}
-        ],
+                                }
+                                ]
+                 ]
 
-
-};
+ 
+	];
 function message(){
         alert('Bonjour EXPERTS');
 }
@@ -55,7 +57,8 @@ function createMenu(men1,submen){
 	mprinc.appendChild(li);
 
 	const ul=document.createElement("ul");
-	for (let i=0; i<submen.length;i++){
+//	for (let i=0; i<submen.length;i++){
+	for (var [cle, valeur] of Object.entries(submen)){
 		const lis=document.createElement("li");
 		const listext=document.createTextNode(submen.course_name);
 		lis.appendChild(listext);
