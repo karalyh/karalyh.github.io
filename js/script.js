@@ -6,26 +6,26 @@ let menude =[
 				},
 				{
 				'course_name':'Javascript/React js',
-				'url':'html.com',
+				'url':'js.com',
 				},
 				{
 				'course_name':'Python/Django',
-				'url':'html.com',
+				'url':'python.com',
 				}
 				]
 		 ],
                 ['Base de donnees',[
                                 {
-                                'course_name':'Html/CSS',
-                                'url':'html.com',
+                                'course_name':'Mysql',
+                                'url':'mysql.com',
                                 },
                                 {
-                                'course_name':'Javascript/React js',
-                                'url':'html.com',
+                                'course_name':'Posgresql',
+                                'url':'pgsql.com',
                                 },
                                 {
-                                'course_name':'Python/Django',
-                                'url':'html.com',
+                                'course_name':'Oracle',
+                                'url':'oracle.com',
                                 }
                                 ]
                  ]
