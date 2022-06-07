@@ -44,7 +44,16 @@ for (let i=0; i<menude.length; i++){
 document.querySelectorAll(".submenu").forEach(function(li){
 
 	li.onclick=function(){
-		document.querySelector('#container').innerHTML= li.dataset.url;
+		//document.querySelector('#container').innerHTML= li.dataset.url;
+		fetch('https://api.exchangeratesapi.io/lastest?base=USD')
+		.then(response=>{
+			return response.json()
+		})
+		.then( data =>{
+			console.log(data);
+			document.querySelector('#container').innerHTML=li.dataset.url+" "+data;
+		});
+
 	};
 
 });
